@@ -7,6 +7,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
 
 
 <style>
@@ -38,11 +41,12 @@ h2 {
   margin: 0px 0 70px 0;
 }
 p {
-  color: rgba(255,205,255,1);
+  color: rgba(255,205,255,250,1);
   background: black;
   background: linear-gradient(bottom, rgba(19,33,30,1), rgba(30,20,50,.4));
   background: -webkit-linear-gradient(bottom, rgba(70,80,50,1), rgba(60,40,550,.4));
   background: -moz-linear-gradient(bottom, rgba(70,70,90,1), rgba(90,80,100,.4));
+  background: repeating-linear-gradient(bottom, rgba(70,90,0,1), rgba(0,40,70,.4));
   padding: 10px;
   line-height: 28px;
   text-align: justify;
@@ -52,6 +56,7 @@ p {
   height: 30px;
   transition: height .5s;
   -webkit-transition: height .5s;
+  -moz-transition: height .5s;
   -moz-transition: height .5s;
 }
 
@@ -76,6 +81,9 @@ small {
 .dessert{
   background-image: url("https://britneybreaksbread.com/wp-content/uploads/2022/06/Strawberry-macarons-8.jpg");
 }
+.tiramisu{
+  background-image: url("https://w4s8p5t8.delivery.rocketcdn.me/wp-content/uploads/2023/09/vegan-tiramisu.jpg");
+}
 .price {
   float: right;
 }
@@ -92,7 +100,7 @@ small {
   div {
 	margin: 20px 12px 0 12px;
   }
-  p {
+  p {https://w4s8p5t8.delivery.rocketcdn.me/wp-content/uploads/2023/09/vegan-tiramisu.jpg
 	font-size: 20px;
 	line-height: 24px;
   }
@@ -128,6 +136,14 @@ input {
 <input type="number"class="quantities" min="0" style="width: 50px">
   <p>macaron <span class="price">$10</span><br />
   <small>A macaroon is a small cake or cookie, originally made from ground almonds, egg whites, and sugar, but now often with coconut or other nuts. They may also include jam, chocolate, or other flavorings</small></p>
+    
+</div>
+
+<div class="tiramisu">
+
+<input type="number"class="quantities" min="0" style="width: 50px">
+  <p>tiramisu <span class="price">$40</span><br />
+  <small>Tiramisu is a classic Italian dessert consisting of layers of coffee-soaked ladyfingers (savoiardi) and a creamy mascarpone filling, often topped with cocoa powder. </small></p>
     
 </div>
 <br><br>
@@ -168,7 +184,7 @@ const Email = document.querySelector("#Email")
 document.querySelector('#submit').addEventListener('click', Submit)
 	const quantities = document.querySelectorAll(".quantities")
   	const prices = document.querySelectorAll(".price")
-const itemsList = ["pain aux raisins", "cheesecake", "macarons"]
+const itemsList = ["pain aux raisins", "cheesecake", "macarons","tiramisu"]
    	 
    	 
    	 
@@ -252,6 +268,11 @@ const itemsList = ["pain aux raisins", "cheesecake", "macarons"]
 
 
 </body>
+
+
+
+
+ 
 
 
 
